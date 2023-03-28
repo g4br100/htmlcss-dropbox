@@ -59,3 +59,30 @@ header{
     text-align: center;
     font-size: 14px;
 }
+
+
+#jumbotron{
+    background-color:rgb(160, 188, 255);
+    height: 738px;
+    padding: 0 20%;
+    padding-top: 100px;
+
+}
+
+#content{
+    justify-content: space-between;
+    display: flex;
+    padding-top: 20px;
+}
+
+#jumbotron h1{
+    font-size: 60px;
+}
+
+#text p{
+    width: 350px;
+}
+
+img{
+    width: 1000px;
+}
