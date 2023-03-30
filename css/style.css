@@ -51,18 +51,18 @@ header{
 }
 
 button{
-    background-color: blue;
     text-align: center;
     border: 0;
-    color: white;
     font-size: 14px;
 }
 
 
 
 .main-nav button{
+    background-color: blue;
     width: 55px;
     height: 30px;
+    color: white;
 }
 
 
@@ -96,9 +96,11 @@ button{
     width: 1000px;
 }
 
-#jumbotron button{
+#jumbotron button, .plan button{
     width: 200px;
     height: 40px;
+    background-color: blue;
+    color: white;
 }
 
 i{
@@ -118,13 +120,18 @@ section {
 
 .plan ul{
     list-style: none;
-    line-height: 30px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+.plan li{
+    padding-bottom: 25px;
 }
 
 .plan{
     border: 1px solid #888888;
     width: 30%;
-    line-height: 40px;
     height: 950px;
     padding: 0 25px;
     font-weight:lighter;
@@ -135,6 +142,18 @@ section {
     border: 1px solid #888888;
     height: 260px;
 
+}
+
+.plan p{
+    line-height: 30px;
+}
+
+.plan p:first-child{
+    text-align: center;
+}
+
+.plan h2, #blockext h2{
+    padding: 20px 0;
 }
 
 section h1, #content1 h1{
@@ -273,3 +292,4 @@ footer hr{
 footer span{
     color: #bdbdbd;
 }
+
