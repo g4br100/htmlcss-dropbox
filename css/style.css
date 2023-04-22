@@ -13,6 +13,9 @@ header{
     box-shadow: 0px 0px 8px #888888;
     font-size: 15px;
     font-weight:100;
+    position: fixed;
+    margin-bottom: 10%;
+    z-index: 10000;
 }
 
 .main-nav{
@@ -24,6 +27,7 @@ header{
     flex-wrap: wrap;
     align-items: center;
     min-height: 68px;
+    
     
 }
 
@@ -65,6 +69,9 @@ button{
     color: white;
 }
 
+main{
+    position: relative;
+}
 
 #jumbotron{
     background-color:#a0bcff;
@@ -96,14 +103,24 @@ button{
     width: 1000px;
 }
 
-#jumbotron button, .plan button{
+#jumbotron button, .plan button, #blockext button{
     width: 200px;
     height: 40px;
     background-color: blue;
     color: white;
 }
+.plan button, #blockext button{
+    margin-bottom: 30px;
+    width: 100%;
 
-i{
+}
+
+#blockext2 div:last-child{
+    margin-top: 25px;
+    width: 25%;
+}
+
+#jumbotron i{
     font-size: 50px;
     padding-top: 90px;
 }
@@ -122,19 +139,53 @@ section {
     list-style: none;
     padding-top: 40px;
     padding-bottom: 25px;
-    text-align: left;
 }
 
 .plan li{
+    display: flex;
     padding-bottom: 25px;
+    line-height: 20px;
 }
 
-.plan{
+.titleb {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.margin p:first-of-type {
+    margin-bottom: 15px;
+}
+
+#blockext2 p:first-of-type{
+    margin-bottom: 50px;
+}
+
+
+.plan {
     border: 1px solid #888888;
-    width: 30%;
-    height: 950px;
-    padding: 0 25px;
+    width: 30%;    
     font-weight:lighter;
+}
+
+.margin, #blockext2{
+    padding: 0 25px;
+}
+
+#blockext2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#blockext2 div:first-child{
+    width: 60%;
+}
+
+.plan i{
+    font-size: 15px;
+    padding-top: 1px;
+    padding-right: 6px;
 }
 
 #blockext{
@@ -143,10 +194,17 @@ section {
     height: 260px;
 
 }
-
-.plan p{
-    line-height: 30px;
+.plan hr{
+    margin: 40px 0;
 }
+
+.plan h4{
+    padding-top: 30px;
+}
+.plan hr{
+    width: 50px;
+}
+
 
 .plan p:first-child{
     text-align: center;
@@ -183,6 +241,15 @@ section h1{
     font-size: 24px;
 }
 
+#c2 button {
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px 15px;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+
 #c1{
     flex-basis: 70%;
 }
@@ -210,33 +277,88 @@ section h1{
 }
 
 #bigbox{
-    padding-top: 100px;
     display: flex;
-    justify-content: space-evenly;
-    
+    margin-top: 10%;      
 }
 
 .square{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 30%;
+    width: calc(100% /3);
+    flex-direction: column;  
 }
 
 .square img{
+    width: 50%;
+    filter: invert(1);
+}
+
+.mbox img{
     width: 40%;
-    margin-top: 30%;
+}
+
+.mbox hr{
+    width: 15%;
+    margin: 5% 0;
+}
+
+
+.mbox p{
+    margin-bottom: 5%;
 }
 
 .mbox{
-    flex-basis: 30%;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 3%;
+    font-weight: lighter;
+}
+
+.green{
+    background-color: green;
+    padding-top: 40%;
+}
+
+.brown{
+    background-color: rgb(116, 28, 28);
+    padding-top: 30%;
+}
+
+
+.blue{
+    background-color: rgb(69, 69, 255);
+    padding-top: 40%;
+
+}
+
+.redl{
+    background-color: red;
+    padding-top: 35%;
+}
+
+.redd{
+    background-color: rgb(178, 0, 0);
+    padding-top: 40%;
 }
 
 .lbox{
-    width: 320px;
-    height: 320px;
-    text-align: center;
-    background-color: blueviolet;
-    
+    width: 280px;
+    height: 280px;
+    text-align: center;    
+}
+
+.blued{
+    background-color: rgb(0, 0, 148);
+    padding-top: 35%;
+}
+
+
+.bluel{
+    background-color: #a0bcff;
+    padding-top: 45%;
+}
+
+.yellow{
+    background-color: rgb(255, 221, 0);
+    padding-top: 30%;
 }
 
 #trial{
@@ -248,15 +370,36 @@ section h1{
     align-items: center;
 }
 
+#trial button{
+    padding: 13px 30px;
+    font-size: 15px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+
 #content1{
+    width: 50%;
 }
 
-#content2{
 
+
+#ask ul{
+    list-style-type: none;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
 }
 
-#ask p{
-    line-height: 100px;
+#ask li{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    
+}
+
+#ask ul li:nth-child(2){
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
 }
 
 footer{
